@@ -1,0 +1,5 @@
+config/hypr/colors.conf
+config/kitty/colors.conf
+config/waybar/colors.css
+config/rofi/colors.rasi
+config/rofi/launchers/type-2/shared/colors.rasi

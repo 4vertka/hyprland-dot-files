@@ -1,0 +1,68 @@
+@import "colors.css";
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "SF Pro Display", "JetBrainsMono Nerd Font", Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;
+    min-height: 0;
+}
+
+window#waybar {
+    background: @background;/*rgba(43, 48, 59, 0.5);*/
+    color: @on_surface;
+}
+
+tooltip {
+  background: @background;/*rgba(43, 48, 59, 0.5);*/
+  border: 1px solid rgba(100, 114, 125, 0.5);
+}
+tooltip label {
+  color: @on_surface;
+}
+
+#tray {
+    padding: 0 10px;
+    margin: 2px;
+    background-color: @primary; /* Use a bright matugen color to test */
+    border-radius: 10px;
+    min-width: 20px;
+    min-height: 20px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: @error;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background: transparent;
+    color: alpha(@on_surface, 0.3); 
+    border-bottom: 3px solid transparent;
+}
+
+#workspaces button.active {
+    color: @primary;
+    border-bottom: 3px solid @primary;
+}
+
+#workspaces button.visible,
+#workspaces button.occupied {
+    color: @on_surface;
+}
+
+#workspaces button:hover {
+    background: alpha(@primary, 0.2);
+    color: @primary;
+}
+
+#clock, #battery, #pulseaudio, #network {
+	padding: 3px 10px;
+	border-radius: 100px;
+	margin: 2px;
+}
+
