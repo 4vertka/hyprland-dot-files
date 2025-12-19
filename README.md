@@ -18,7 +18,7 @@ yay -S matugen-bin
 ```
 
 ## 🚀 How to Install
-1. Clone the repo: `git clone https://github.com/YOUR_USERNAME/dotfiles.git ~/dotfiles`
+1. Clone the repo: `git clone https://github.com/4vertka/hyprland-dot-files.git ~/dotfiles`
 2. Link the configs:
 ```bash
 cd ~/dotfiles
